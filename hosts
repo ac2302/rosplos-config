@@ -9,4 +9,5 @@ ff02::2    ip6-allrouters
 # custom addresses
 0.0.0.0  jira.com
 0.0.0.0  ttt.aryansdomain.com
+0.0.0.0  wikipedia.org
 

